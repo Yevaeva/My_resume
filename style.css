@@ -10,10 +10,14 @@ ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgba(111,122,138,1);
     box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
     width: 185.6%;
     position: fixed;
+    top: 10px;
+    
+   
 }
 
 li {
@@ -23,18 +27,21 @@ li {
 }
 
 .panel {
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.5)
 }
 
+.panel:hover {
+    color: rgb(94, 255, 0);
+    transition: 1s ;
+
+}
+
 nav {
-    background-color: rgba(111,122,138,1);
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
+    flex-wrap: wrap;
     
-
 }
 .top {
     
@@ -48,14 +55,17 @@ nav {
 img {
     width: 30%;
    filter: grayscale(0.7);
-   /* position: sticky; */
+    position: sticky;
+    top: -50px;
+  
+   
     
 }
 
 .header {
     font-size: 120px;
     color: #fff;
-    padding: 70px 20px 40px 20px;
+    padding: 130px 20px 40px 20px;
     width: min-content;
     
 }
@@ -68,12 +78,8 @@ img {
 
 } */
 
-.panel:hover {
-    color: rgb(94, 255, 0);
-    transition: 1s ;
-    
 
-} 
+
 
 .cv {
     border: 1px solid  rgb(94, 255, 0) ;
@@ -87,5 +93,54 @@ img {
     background-color: rgb(94, 255, 0);
     transition: 1s ;
     color:#000;
+    
 }
+
+
+span {
+      display: flex;
+      color:  rgb(94, 255, 0);
+      border-radius: 50%;
+      border-right: 4px solid  rgb(94, 255, 0);
+      /* border-left: 4px solid  rgb(94, 255, 0); */
+      padding: 5px 15px 10px 15px;
+      font-size: 30px;
+      margin-right: 70px;
+  }
+
+span a {
+    color:  rgb(94, 255, 0);
+    
+  }
+a {
+      text-decoration: none;
+  }
+
+.about {
+    width: 70%;
+    background-color: rgb(49, 46, 46);
+    text-align: center;
+    margin: 100px auto;
+    padding: 70px;
+    /* z-index: 3; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 100px;
+    
+
+}
+.abouttext {
+    color: #fff;
+    padding: 40px;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.menu {
+    background-color: rgba(111,122,138,1);
+
+}
+
 
